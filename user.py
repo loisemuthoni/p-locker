@@ -13,3 +13,11 @@ class user:
         self.last_name = last_name
         self.phone_number = phone_number
         self.email = email
+
+    def delete_user(self):
+
+        '''
+        delete_user method deletes a saved user from the user_list
+        '''
+
+        user.user_list.remove(self)
