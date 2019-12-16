@@ -4,6 +4,7 @@
 - Loise Muthoni
 
 ## Description
+
 - An application that allows us to generate and store passwords for various accounts. Password Locker stores a user's password for their various accounts. It also allows the user to generate random password and various credentials and stores them.
 
 ## Setup Installation
@@ -21,9 +22,11 @@
 - ex - Exit the password Locker
 
 ## Technologies Used 
+
 - Python3
 
 ## Contact Information
+
 - Email: loisemburu01@gmail.com
 - Phone NUmber: 0796579620
 
