@@ -1,5 +1,9 @@
 class user:
     user_list = []
+    def save_user(self):
+
+
+        user.user_list.append(self)
 
     def __init__(self,account_name,last_name,phone_number,email):
 
