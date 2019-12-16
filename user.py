@@ -21,3 +21,10 @@ class user:
         '''
 
         user.user_list.remove(self)
+
+    @classmethod
+    def find_by_number(cls,number):
+        
+        for user in cls.user_list:
+            if user.phone_number == number:
+                return user
