@@ -39,10 +39,10 @@ def display_users():
     return user.display_users()
 
 def main():
-    print("Hello Welcome to password locker!")
+    print("Hello Welcome to the password locker!")
     user_name = input()
 
-    print(f"Hello {user_name}. Please Log in")
+    print(f"Hello {user_name}. Please Log in to your account")
     print('\n')
 
     while True:
