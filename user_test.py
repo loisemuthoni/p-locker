@@ -1,5 +1,6 @@
 import unittest # Importing the unittest module
 from user import user # Importing the user class
+import pyperclip
 
 class TestUser(unittest.TestCase):
 
@@ -67,6 +68,37 @@ class TestUser(unittest.TestCase):
         found_user = user.find_by_number("0711223344")
 
         self.assertEqual(found_user.email,test_user.email)
+
+    def test_user_exists(self):
+        '''
+        test to check if we can return a Boolean  if we cannot find the user.
+        '''
+
+        self.new_user.save_user()
+        test_user = user("Test","user","0711223344","test@user.com")
+        test_user.save_user()
+
+        user_exists = user.user_exist("0711223344")
+
+        self.assertTrue(user_exists)
+
+    def test_display_all_users(self):
+        '''
+        method that returns a list of all user saved
+        '''
+
+        self.assertEqual(user.display_users(),user.user_list)
+
+    def test_copy_email(self):
+        '''
+        Test to confirm that we are copying the email address from a found user
+        '''
+
+        self.new_user.save_user()
+
+        user.copy_email("0712345678")
+
+        self.assertEqual(self.new_user.email,pyperclip.paste())
 
        
             
