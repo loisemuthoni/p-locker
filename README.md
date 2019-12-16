@@ -23,6 +23,10 @@
 ## Technologies Used 
 - Python3
 
+## Contact Information
+- Email: loisemburu01@gmail.com
+- Phone NUmber: 0796579620
+
 ## Licence $ Copyright Information
 MIT License Copyright (c) 2019 (Loise Muthoni) 
 
