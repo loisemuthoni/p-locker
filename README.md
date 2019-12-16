@@ -12,7 +12,13 @@
 - Run the ./run.py script on the terminal to open.
 
 ## BDD
-- 
+- cc - Creates a new account
+
+- dc - logs in
+
+- fc - Enter the account you want to search for
+
+- ex - Exit the password Locker
 
 ## Technologies Used 
 - Python3
