@@ -39,14 +39,14 @@ def display_users():
     return user.display_users()
 
 def main():
-    print("Hello Welcome to your user list. What is your name?")
+    print("Hello Welcome to password locker!")
     user_name = input()
 
-    print(f"Hello {user_name}. what would you like to do?")
+    print(f"Hello {user_name}. Please Log in")
     print('\n')
 
     while True:
-        print("Use these short codes : cc - create a new user, dc - display users, fc -find a user, ex -exit the user list ")
+        print("cc- create a new user account, dc - login into your account (if you already have a password locker account), fc - Enter the account you want to search for, EX - exit from password locker")
         short_code = input().lower()
         if short_code == 'cc':
             print("New user")
@@ -70,18 +70,18 @@ def main():
 
         elif short_code == 'dc':
             if display_users():
-                print("Here is a list of all your users")
+                print("login into your account")
                 print('\n')
                 for user in display_users():
                    print("{user.account_name} {user.last_name} .....{user.phone_number}")
                    print('\n')
             else:
                 print('\n')
-                print("You dont seem to have any users saved yet")
+                print("You dont seem to have any account saved yet")
                 print('\n')
 
         elif short_code == 'fc':
-            print("Enter the number you want to search for")
+            print("Enter the account you want to search for")
             search_number = input()
             if check_existing_users(search_number):
                 search_user = find_user(search_number)
@@ -91,9 +91,9 @@ def main():
                 print(f"Phone number.......{search_user.phone_number}")
                 print(f"Email address.......{search_user.email}")
             else:
-                    print("That user does not exist")
+                    print("That account does not exist")
         elif short_code == "ex":
-            print("Bye .......")
+            print("exit from password locker")
             break
         else:
                 print("I really didn't get that. Please use the short codes")
