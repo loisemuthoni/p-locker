@@ -70,14 +70,14 @@ def main():
 
         elif short_code == 'dc':
             if display_users():
-                print("login into your account")
+                print("please,login into your account")
                 print('\n')
                 for user in display_users():
                    print("{user.account_name} {user.last_name} .....{user.phone_number}")
                    print('\n')
             else:
                 print('\n')
-                print("You dont seem to have any account saved yet")
+                print("You dont seem to have any account yet")
                 print('\n')
 
         elif short_code == 'fc':
