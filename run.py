@@ -39,7 +39,7 @@ def display_users():
     return user.display_users()
 
 def main():
-    print("Hello Welcome to the password locker!")
+    print("Hello Welcome to the password locker, use the short_code!")
     user_name = input()
 
     print(f"Hello {user_name}. Please Log in to your account")
