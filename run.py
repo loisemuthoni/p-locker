@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env python3
 from user import user
 
 def create_user(aname,lname,phone,email):

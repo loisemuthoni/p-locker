@@ -7,12 +7,12 @@ class credentials:
 
         credentials.credentials_list.append(self)
 
-    def __init__(self,account_name,last_name,phone_number,email):
+    def __init__(self,account_name,pass_word,phone_number,email):
 
          
           
         self.account_name = account_name
-        self.last_name = last_name
+        self.pass_word = pass_word
         self.phone_number = phone_number
         self.email = email
 
