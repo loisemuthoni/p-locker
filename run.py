@@ -55,17 +55,17 @@ def main():
             print ("Account name ....")
             a_name = input()
 
-            print("Last name ...")
-            l_name = input()
+            print("password ...")
+            p_word = input()
 
             print("Phone number ...")
             p_number = input()
 
             print("Email address ...")
             e_address = input()
-            save_users(create_user(a_name,l_name,p_number,e_address)) # create and save new user.
+            save_users(create_user(a_name,p_word,p_number,e_address)) # create and save new user.
             print ('\n')
-            print(f"New user {a_name} {l_name} created")
+            print(f"New user {a_name} {p_word} created")
             print ('\n')
 
         elif short_code == 'dc':
@@ -73,7 +73,7 @@ def main():
                 print("please,login into your account")
                 print('\n')
                 for user in display_users():
-                   print("{user.account_name} {user.last_name} .....{user.phone_number}")
+                   print("{user.account_name} {user.password} .....{user.phone_number}")
                    print('\n')
             else:
                 print('\n')
