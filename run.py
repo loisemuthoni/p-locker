@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from user import user
+from credentials import credentials
 
 def create_user(aname,lname,phone,email):
     '''
